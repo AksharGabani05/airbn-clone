@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000;
+  --grey: #ddd;
+  --font-grey: #717171;
+  --white: #ffffff;
+  --theme: #ff385c;
+  --light-grey: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.popup-info {
+  margin-top: 15px;
+}
+
+.popup-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+:root {
+  --primary-color: #1976d2;
+  --primary-hover-color: #115293;
+  --link-color: #1976d2;
+}
+
+.profile-menu-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.menu-items {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  animation: popup-show 0.3s ease-in-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-swiper img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.popup-info {
+  margin-top: 20px;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.popup-btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.popup-btn:hover {
+  background-color: var(--primary-hover-color);
+}
+/* General button styles */
+button,
+.booking-btn {
+  padding: 12px 24px; /* Adds padding around the text */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Changes cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Booking Button Styles */
+.booking-btn {
+  background-color: #ff6347; /* Tomato color */
+  color: white; /* White text */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.2); /* Subtle shadow */
+}
+
+.booking-btn:hover {
+  background-color: #e5533e; /* Darken on hover */
+  box-shadow: 0 6px 12px rgba(255, 99, 71, 0.3); /* Shadow intensifies */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart-btn {
+  background-color: #28a745; /* Green color */
+  color: white; /* White text */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Subtle shadow */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3); /* Shadow intensifies */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Focus and active states for accessibility */
+button:focus, .booking-btn:focus, .add-to-cart-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5); /* Focus ring for accessibility */
+}
+
+button:active, .booking-btn:active, .add-to-cart-btn:active {
+  transform: translateY(2px); /* Button moves down slightly when clicked */
+}
+/* Booking Form Modal Styles */
+.booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+}
+
+.booking-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Close button styles for the modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff6347;
+}
+/* Selected Hotel Image in Booking Form */
+.selected-hotel-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* Add these styles to your styles.css */
+
+.done-popup-overlay,
+.booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done-popup,
+.booking-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.submit-btn[disabled] {
+  background-color: #ccc;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.done-popup h3 {
+  color: green;
+}
+
+.done-popup p {
+  color: #333;
+}
+.loader-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #61dafb; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
