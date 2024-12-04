@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
@@ -17,7 +16,7 @@ import "./styles.css";
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [openModal, setOpenModal] = useState(false);
-  const [formType, setFormType] = useState(""); // "login" or "signup"
+  const [formType, setFormType] = useState(""); 
 
   const open = Boolean(anchorEl);
 
@@ -50,7 +49,7 @@ export default function BasicMenu() {
         onClick={handleMenuClick}
         className="profile-menu-flex"
       >
-        <MenuRoundedIcon />
+        
         <AccountCircleRoundedIcon />
       </div>
       <Menu
@@ -93,7 +92,7 @@ export default function BasicMenu() {
         </MenuItem>
       </Menu>
 
-      {/* Modal for Login/Signup Form */}
+      
       <Modal open={openModal} onClose={handleFormClose}>
         <Box
           sx={{

@@ -7,6 +7,9 @@
   --white: #ffffff;
   --theme: #ff385c;
   --light-grey: #f7f7f7;
+  --primary-color: #1976d2;
+  --primary-hover-color: #115293;
+  --link-color: #1976d2;
 }
 
 body {
@@ -15,70 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
 
-.popup-box {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.popup-img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.popup-info {
-  margin-top: 15px;
-}
-
-.popup-rating {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-:root {
-  --primary-color: #1976d2;
-  --primary-hover-color: #115293;
-  --link-color: #1976d2;
-}
-
-.profile-menu-flex {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-
-.menu-items {
-  font-size: 1rem;
-  padding: 10px 20px;
-}
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -112,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.popup-swiper img {
+.popup-img {
   width: 100%;
   border-radius: 10px;
 }
@@ -141,55 +81,56 @@ body {
 .popup-btn:hover {
   background-color: var(--primary-hover-color);
 }
-/* General button styles */
+
 button,
 .booking-btn {
-  padding: 12px 24px; /* Adds padding around the text */
+  padding: 12px 24px;
   border: none;
-  border-radius: 8px; /* Rounded corners */
-  font-size: 16px; /* Set the font size */
-  cursor: pointer; /* Changes cursor on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Booking Button Styles */
 .booking-btn {
-  background-color: #ff6347; /* Tomato color */
-  color: white; /* White text */
+  background-color: #ff6347;
+  color: white;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.2); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.2);
 }
 
 .booking-btn:hover {
-  background-color: #e5533e; /* Darken on hover */
-  box-shadow: 0 6px 12px rgba(255, 99, 71, 0.3); /* Shadow intensifies */
-  transform: translateY(-2px); /* Slight upward movement on hover */
+  background-color: #e5533e;
+  box-shadow: 0 6px 12px rgba(255, 99, 71, 0.3);
+  transform: translateY(-2px);
 }
 
-/* Add to Cart Button Styles */
 .add-to-cart-btn {
-  background-color: #28a745; /* Green color */
-  color: white; /* White text */
+  background-color: #28a745;
+  color: white;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
 }
 
 .add-to-cart-btn:hover {
-  background-color: #218838; /* Darker green on hover */
-  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3); /* Shadow intensifies */
-  transform: translateY(-2px); /* Slight upward movement on hover */
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+  transform: translateY(-2px);
 }
 
-/* Focus and active states for accessibility */
-button:focus, .booking-btn:focus, .add-to-cart-btn:focus {
+button:focus,
+.booking-btn:focus,
+.add-to-cart-btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5); /* Focus ring for accessibility */
+  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5);
 }
 
-button:active, .booking-btn:active, .add-to-cart-btn:active {
-  transform: translateY(2px); /* Button moves down slightly when clicked */
+button:active,
+.booking-btn:active,
+.add-to-cart-btn:active {
+  transform: translateY(2px);
 }
-/* Booking Form Modal Styles */
+
 .booking-form-overlay {
   position: fixed;
   top: 0;
@@ -246,31 +187,14 @@ button:active, .booking-btn:active, .add-to-cart-btn:active {
   background-color: #218838;
 }
 
-/* Close button styles for the modal */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: #ff6347;
-}
-/* Selected Hotel Image in Booking Form */
 .selected-hotel-img {
   width: 100%;
   max-width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
-/* Add these styles to your styles.css */
 
-.done-popup-overlay,
-.booking-form-overlay {
+.done-popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -282,27 +206,12 @@ button:active, .booking-btn:active, .add-to-cart-btn:active {
   align-items: center;
 }
 
-.done-popup,
-.booking-form {
+.done-popup {
   background: white;
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
   width: 100%;
-}
-
-.submit-btn[disabled] {
-  background-color: #ccc;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .done-popup h3 {
@@ -312,6 +221,7 @@ button:active, .booking-btn:active, .add-to-cart-btn:active {
 .done-popup p {
   color: #333;
 }
+
 .loader-overlay {
   display: flex;
   justify-content: center;
@@ -326,8 +236,8 @@ button:active, .booking-btn:active, .add-to-cart-btn:active {
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Light gray */
-  border-top: 8px solid #61dafb; /* Blue */
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #61dafb;
   border-radius: 50%;
   width: 60px;
   height: 60px;

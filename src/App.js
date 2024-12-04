@@ -1,26 +1,23 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { list, list2 } from "./assets/cards-list";
+import { list } from "./assets/cards-list";
 import Cards from "./components/Cards";
-import Filter from "./components/Filter";
 import Header from "./components/Header";
 import Footer from "./components/Header/Footer";
 
 function App() {
-  const [loading, setLoading] = useState(true); // Add a loading state
-  const [selectedFilter, setSelectedFilter] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading process
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after 2 seconds
+      setLoading(false); 
     }, 3000);
 
-    return () => clearTimeout(timer); // Cleanup timer
+    return () => clearTimeout(timer); 
   }, []);
 
   if (loading) {
-    // Show the loader while the app is loading
+    
     return (
       <div style={styles.loaderContainer}>
         <div style={styles.loader}></div>
@@ -31,17 +28,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Filter
-        selectedFilter={selectedFilter}
-        setSelectedFilter={setSelectedFilter}
-      />
-      {selectedFilter === 0 ? <Cards list={list} /> : <Cards list={list2} />}
+      <Cards list={list} />
       <Footer />
     </div>
   );
 }
 
-// Add styles for the loader
+
 const styles = {
   loaderContainer: {
     display: "flex",
@@ -51,8 +44,8 @@ const styles = {
     backgroundColor: "#282c34",
   },
   loader: {
-    border: "8px solid red", // Light gray
-    borderTop: "8px solid #61dafb", // Blue
+    border: "8px solid red", 
+    borderTop: "8px solid #61dafb", 
     borderRadius: "50%",
     width: "80px",
     height: "80px",
@@ -60,7 +53,6 @@ const styles = {
   },
 };
 
-// Add keyframes for loader animation
 const styleSheet = document.styleSheets[0];
 const keyframes = `
 @keyframes spin {

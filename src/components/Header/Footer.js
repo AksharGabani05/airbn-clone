@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
-        {/* About Section */}
+      
         <p style={styles.text}>
           Create ❤️ by <strong>Akshar Gabani</strong>. {" "}
           <a
