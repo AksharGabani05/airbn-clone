@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+🏡 Airbnb Clone
+🌍 Your Travel Companion for Booking Homes, Apartments, and More!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌟 Overview
+The Airbnb Clone is a React.js web application that replicates the user interface and basic functionalities of Airbnb. It allows users to browse through available listings, view property details, and book accommodations. The app also includes search functionality, user authentication, and personalized user profiles.
 
-## Available Scripts
+📂 Features
+✔️ User Registration & Login: Secure user authentication with login and registration functionalities.
+✔️ Search Listings: Users can search for listings by location, check-in/check-out dates, and number of guests.
+✔️ Filter & Sort Listings: Filter properties based on price, number of rooms, amenities, and more.
+✔️ View Property Details: Each listing has a detailed page with descriptions, images, pricing, and reviews.
+✔️ Booking Functionality: Users can book properties directly through the app.
+✔️ Responsive Design: Optimized for desktop, tablet, and mobile devices.
+✔️ User Profile: Users can manage their profile and view their bookings.
+✔️ Ratings & Reviews: Guests can leave ratings and reviews for properties after their stay.
+✔️ Admin Panel (Optional): Admin users can add, edit, or remove listings and manage users.
 
-In the project directory, you can run:
+🛠️ Tech Stack
+Frontend: React.js, HTML, CSS, TailwindCSS/Bootstrap
+State Management: Context API or Redux
+Routing: React Router
+Libraries: Axios (for API calls), React Toastify (for notifications), React Icons
+Authentication: Firebase or JWT-based Authentication
+Backend (optional): Node.js/Express, MongoDB
+Deployment: Vercel, Netlify, or any cloud platform
+🎨 Screenshots
+1️⃣ Home Page
 
-### `npm start`
+2️⃣ Search Results
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3️⃣ Property Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4️⃣ Booking Page
 
-### `npm test`
+🤝 Contributing
+We welcome contributions! 🚀 Follow these steps to contribute:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fork the repository.
+Create a new branch for your feature (git checkout -b feature-name).
+Commit your changes (git commit -m "Add feature-name").
+Push to your branch (git push origin feature-name).
+Open a Pull Request.
 
-### `npm run build`
+👨‍💻 Author
+👤 Akshar Gabani
+📧 Email: akshargabani9425@gmail.com
+🌐 GitHub: AksharGabani05
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🌐 Live Demo : https://airbn-clone-beta.vercel.app/
