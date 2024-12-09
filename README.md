@@ -19,7 +19,6 @@ Deployment: Vercel
 We welcome contributions! 🚀 Follow these steps to contribute:
 
 🚀 Installation
-
 - git clone airbn-clone
 - npm i
 - cd airbn-clone
